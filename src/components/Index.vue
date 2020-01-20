@@ -88,10 +88,6 @@ export default {
 
     .article {
       width: 100%;
-      /* Make first two articles wider than others */
-      &:nth-child(-n + 2) {
-        width: 100%;
-      }
     }
   }
 

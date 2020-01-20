@@ -1,7 +1,7 @@
 <template>
   <main class="page__wrapper">
     <router-link class="btn" to="/">Go back</router-link>
-    <article class="article article--show">
+    <article class="article">
       <header class="article__header">
         <h4 class="article__title">{{ article.title }}</h4>
         <section class="article__section">
