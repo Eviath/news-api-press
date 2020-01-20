@@ -31,6 +31,8 @@
       <section class="article__section">
         <p class="article__content">{{ article.content }}</p>
       </section>
+
+      <a :href="article.url">source</a>
     </article>
   </main>
 </template>
