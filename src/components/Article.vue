@@ -2,7 +2,7 @@
   <router-link
     :to="{
       name: 'article',
-      params: { title: parameterizedTitle(), article: article }
+      params: { title: parameterizedTitle, article: article }
     }"
     class="article__inner"
   >
@@ -26,9 +26,8 @@ export default {
   props: {
     article: Object
   },
-  methods: {
-    // Parameterized title of article, to pass as param for router  /article/:title
-    parameterizedTitle() {
+  computed: {
+    parameterizedTitle: function() {
       return this.article.title
         .trim()
         .toLowerCase()
